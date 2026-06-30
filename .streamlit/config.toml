@@ -1,0 +1,24 @@
+# https://docs.streamlit.io/develop/api-reference/configuration/config.toml
+
+[theme]
+base="dark" # Padrão claro ("light") ou escuro ("dark")
+primaryColor="#D04E28" ##073D40 Contornos | Teste mudando para "red"
+backgroundColor="#073D40" # Fundo principal
+secondaryBackgroundColor="#0A585C" # Fundo secundário
+textColor="white" # Cor da fonte
+
+[browser]
+# Desativa o envio de métricas para o Streamlit (privacidade)
+gatherUsageStats=false
+
+#   Mais informações:  https://streamlit.io/privacy-policy
+#   Comandos utilizados: Se você usa mais o st.slider ou o st.dataframe, por exemplo.
+#   Versão do Streamlit e Python: Para saber quais versões ainda precisam de suporte.
+#   Sistema Operacional: Se você está no Windows, Mac ou Linux.
+#   Frequência de uso: Quantas vezes o comando streamlit run foi executado.
+#   Eles não olham para o conteúdo dos seus dados (como as tabelas do seu banco de dados, por exmeplo).
+
+
+[global]
+# Usar apache Arrow (mais rápido), para otimizar a entrega da tabela/dados.
+dataFrameSerialization = "arrow"

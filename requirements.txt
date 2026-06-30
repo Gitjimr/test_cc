@@ -1,0 +1,7 @@
+CoolProp==8.0.0
+matplotlib==3.11.0
+numpy==2.5.0
+pandas==3.0.3
+Pillow==12.2.0
+plotly==6.8.0
+streamlit==1.58.0
